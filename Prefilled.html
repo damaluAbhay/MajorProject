@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+  <h1 style="background-color:#05051b ; color: #f4f0f7; font-size: 28px; font-family: Arial, sans-serif; text-transform: uppercase;">Automated Resume Generator</h1>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5dlgLnd_tU72s5jsslix0Z_1FvW2XoSXBzwxspAaDI-YHqQ/viewform?usp=pp_url&entry.416724939=Ashish+Thakur&entry.259307025=8278803773&entry.1134223915=H.No.35+Main+Street+Brow&entry.826792834=Teh.+Rampur+Distt.+Shimla&entry.1235877909=HP+-+172001&entry.1752416317=HP+Board&entry.14165787=2019&entry.1058052769=Padam+Govt.+Sr.+Sec.+School+Rampur&entry.1702710030=91.5&entry.935603538=CBSE+Board&entry.1997429138=2021&entry.1336099596=DAV+Public+School+Rampur+Bsr.&entry.1646755554=85.6&entry.1904258904=BCA,+GB+Pant+Memorial+College+Rampur&entry.394583268=2024&entry.558865365=8.2&entry.1166378940=Received+Leadership+Excellence+Award%0AScholarship+Recipient%0ABest+Poster+Presentation+Award&entry.619502311=Python+Certified+Programmer%0AData+Science+%26+Analytics%0AData+Structures+and+Algorithm&entry.58395370=Well+Versed+in+Various+Programming+Languages%0AKnows+DBMS+in+depth%0AFirm+Knowledge+of+DSA&entry.1206142220=Served+as+Class+Representative%0AServed+as+Team+Leader+in+Group+Project&entry.326563413=Participated+in+Poster+Making+Competition%0AParticipated+in+Cricket+Sports+Team&entry.13851679=Playing+Video+Games,+Reading+novels,+Playing+Chess,+Travelling,+Coding&entry.840518788=T1" width="700" height="4800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <hr style="border: none; border-top: 3px solid black;">
+  <h2 style="color: #05051b; font-family: Arial, sans-serif; text-shadow: 2px 2px 4px #333333; letter-spacing: 2px; text-transform: uppercase">Templates</h2>
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="1.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="2.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="3.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="4.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="5.jpg" style="width:50%">
+  </div>
+    
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(1)" alt="T1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(2)" alt="T2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(3)" alt="T3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="4.jpg" style="width:100%" onclick="currentSlide(4)" alt="T4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="5.jpg" style="width:100%" onclick="currentSlide(5)" alt="T5">
+    </div>    
+  </div>
+</div>
+
+<footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
+  <a style="color : rgb(131, 224, 236)" href="index.html">Click here to reset form</a>
+</footer>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
